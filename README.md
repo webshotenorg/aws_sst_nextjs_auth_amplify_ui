@@ -1,0 +1,1 @@
+# aws_sst_nextjs_auth_amplify_ui
