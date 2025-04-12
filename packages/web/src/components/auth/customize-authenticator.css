@@ -1,0 +1,34 @@
+:root {
+  --amplify-colors-primary-80: oklch(0.646 0.222 41.116); /** button **/
+  --amplify-colors-primary-90: oklch(0.56 0.222 41.116); /** button hover **/
+}
+
+/** 周囲 **/
+[data-amplify-authenticator] [data-amplify-router] {
+  background-color: var(
+    --amplify-components-authenticator-router-background-color
+  );
+  box-shadow: var(--amplify-components-authenticator-router-box-shadow);
+  border-color: var(--amplify-components-authenticator-router-border-color);
+  border-width: var(--amplify-components-authenticator-router-border-width);
+  border-style: var(--amplify-components-authenticator-router-border-style);
+  border-radius: 10px;
+}
+
+/** タブ **/
+.amplify-tabs__list {
+  --internal-item-margin-start: 0;
+  --internal-item-margin-end: calc(
+    -1 * var(--amplify-components-tabs-item-border-width)
+  );
+  --internal-item-border-width: 0 0 var(--amplify-components-tabs-border-width)
+    0;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--amplify-components-tabs-background-color);
+  box-shadow: var(--amplify-components-tabs-box-shadow);
+  border-width: var(--internal-item-border-width);
+  border-style: var(--amplify-components-tabs-border-style);
+  border-color: var(--amplify-components-tabs-border-color);
+  gap: var(--amplify-components-tabs-gap);
+}
